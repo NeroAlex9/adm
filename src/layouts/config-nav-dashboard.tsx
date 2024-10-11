@@ -1,4 +1,4 @@
-import { Label } from 'src/components/label';
+
 import { SvgColor } from 'src/components/svg-color';
 
 // ----------------------------------------------------------------------
@@ -19,15 +19,11 @@ export const navData = [
     icon: icon('ic-user'),
   },
   {
-    title: 'Product',
+    title: 'Prize',
     path: '/products',
     icon: icon('ic-cart'),
-    info: (
-      <Label color="error" variant="inverted">
-        +3
-      </Label>
-    ),
   },
+
   {
     title: 'Sign in',
     path: '/sign-in',

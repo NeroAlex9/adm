@@ -6,7 +6,7 @@ import Typography from '@mui/material/Typography';
 
 import { fCurrency } from 'src/utils/format-number';
 
-import { Label } from 'src/components/label';
+
 import { ColorPreview } from 'src/components/color-utils';
 
 // ----------------------------------------------------------------------
@@ -22,22 +22,6 @@ export type ProductItemProps = {
 };
 
 export function ProductItem({ product }: { product: ProductItemProps }) {
-  const renderStatus = (
-    <Label
-      variant="inverted"
-      color={(product.status === 'sale' && 'error') || 'info'}
-      sx={{
-        zIndex: 9,
-        top: 16,
-        right: 16,
-        position: 'absolute',
-        textTransform: 'uppercase',
-      }}
-    >
-      {product.status}
-    </Label>
-  );
-
   const renderImg = (
     <Box
       component="img"
@@ -73,7 +57,7 @@ export function ProductItem({ product }: { product: ProductItemProps }) {
   return (
     <Card>
       <Box sx={{ pt: '100%', position: 'relative' }}>
-        {product.status && renderStatus}
+        
 
         {renderImg}
       </Box>
